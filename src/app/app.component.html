@@ -1,2 +1,22 @@
-<button class="bg-btn">Test</button>
-<h1 class="bg-black">hdjsafh</h1>
+<div class="h-screen bg-blue-700 text-white flex justify-center items-center">
+  <div class="flex flex-col items-center text-center space-y-5">
+    <img src="assets/profile_pic_blue.png" class="rounded-full h-36 w-36">
+    <h2 class="text-5xl font-pacifico">{{'Deepak K J'}}</h2>
+    <div>
+      <p class="text-2xl ">WEB AND MOBILE</p>
+      <p class="text-2xl ">APPLICATION DEVELOPER</p>
+    </div>
+      <ul class="flex justify-center flex-wrap space-x-5">
+        <li *ngFor="let option of techList">{{option}}</li>
+      </ul>
+      <div class="border-t border-white h-1 w-1/2"></div>
+      <div class="flex flex-wrap space-x-4 sm:space-x-8 w-3/4 border rounded-md bg-white text-blue-700 px-4 sm:px-8 py-2">
+        <fa-icon [icon]="faPhoneAlt"></fa-icon>
+        <p class="text-right">+91 8296771595</p>
+      </div>
+      <div class="flex flex-wrap space-x-4 sm:space-x-8 w-3/4 border rounded-md bg-white text-blue-700 px-4 sm:px-8 py-2">
+        <fa-icon [icon]="faEnvelope"></fa-icon>
+        <p>kjdeepak4work@gmail.com</p>
+      </div>
+  </div>
+</div>
