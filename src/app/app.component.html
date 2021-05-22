@@ -22,5 +22,11 @@
       <p>kjdeepak4work@gmail.com</p>
       <a #mailLink href="mailto:kjdeepak4work@gmail.com" class="hidden"></a>
     </div>
+    <ul class="flex justify-center flex-wrap space-x-5">
+      <li *ngFor="let option of socialMediaList">
+        <fa-icon [icon]="option.icon" [title]="option.socialPlatformName"
+          (click)="openSocialMediaLinkOnNewPage(option.socialPlatformUrlLink)" class="cursor-pointer fa-2x"></fa-icon>
+      </li>
+    </ul>
   </div>
 </div>
