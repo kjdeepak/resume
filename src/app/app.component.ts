@@ -4,7 +4,11 @@ import {
   faEnvelope,
   IconDefinition,
 } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import {
+  faLinkedin,
+  faTwitter,
+  faMedium,
+} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -36,6 +40,11 @@ export class AppComponent {
       socialPlatformName: 'Twitter | @k_j_deepak',
       socialPlatformUrlLink: 'https://twitter.com/k_j_deepak',
       icon: faTwitter,
+    },
+    {
+      socialPlatformName: 'Medium | @kjdeepak',
+      socialPlatformUrlLink: 'https://medium.com/@kjdeepak',
+      icon: faMedium,
     },
   ];
   faPhoneAlt = faPhoneAlt;
