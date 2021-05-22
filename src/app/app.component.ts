@@ -9,6 +9,7 @@ import {
   faTwitter,
   faMedium,
 } from '@fortawesome/free-brands-svg-icons';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,7 @@ import {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Deepak K J | Portfolio';
   techList: Array<string> = [
     'Angular',
     'React',
@@ -49,6 +50,10 @@ export class AppComponent {
   ];
   faPhoneAlt = faPhoneAlt;
   faEnvelope = faEnvelope;
+
+  constructor(private titleService: Title) {
+    this.titleService.setTitle(this.title);
+  }
 
   openSocialMediaLinkOnNewPage(urlLink: string): void {
     if (window) {
