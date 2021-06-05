@@ -10,12 +10,6 @@
       <li *ngFor="let option of techList">{{option}}</li>
     </ul>
     <div class="border-t border-white h-1 w-1/2"></div>
-    <div (click)="telephoneLink.click()"
-      class="flex flex-wrap cursor-pointer space-x-4 sm:space-x-8 w-3/4 border rounded-md bg-white text-blue-700 px-4 sm:px-8 py-2">
-      <fa-icon [icon]="faPhoneAlt"></fa-icon>
-      <p class="text-right">+91 8296771595</p>
-      <a #telephoneLink href="tel:+918296771595" class="hidden"></a>
-    </div>
     <div (click)="mailLink.click()"
       class="flex flex-wrap cursor-pointer space-x-4 sm:space-x-8 w-3/4 border rounded-md bg-white text-blue-700 px-4 sm:px-8 py-2">
       <fa-icon [icon]="faEnvelope"></fa-icon>
